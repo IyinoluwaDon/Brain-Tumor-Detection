@@ -1,0 +1,37 @@
+{
+  "source": "https://www.kaggle.com/datasets/preetviradiya/brian-tumor-dataset",
+  "source_license": "GPL-2.0 (dataset metadata; verify image rights before redistribution)",
+  "archive_sha256": "65045c296e1f533693e099fc804087744a46a901906c6bdf46c1f80fd51551a8",
+  "unique_resized_images": 3928,
+  "train": 3142,
+  "test": 786,
+  "accuracy": 0.811704834605598,
+  "balanced_accuracy": 0.8047520457458346,
+  "confusion_matrix_labels": [
+    0,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      380,
+      61
+    ],
+    [
+      87,
+      258
+    ]
+  ],
+  "labels": {
+    "0": "Brain_Tumor",
+    "1": "Healthy"
+  },
+  "limitations": [
+    "Educational image-level split; patient identifiers unavailable, so patient independence is not established.",
+    "Exact duplicate resized pixels are grouped before splitting; near duplicates may remain.",
+    "This is a newly trained 32x32 grayscale logistic baseline, not the missing original CNN.",
+    "No clinical validation or external test set."
+  ],
+  "preprocessing": "Pillow grayscale, bilinear resize 32x32, float32 /255",
+  "seed": 42,
+  "C": 0.1
+}
